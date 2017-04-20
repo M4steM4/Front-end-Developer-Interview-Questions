@@ -1,209 +1,223 @@
-# Front-end Job Interview Questions
+# **프론트엔드 개발자 면접 질문**
 
-This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
+이 문서에는 프론트 엔드 개발 지원자 면접에 사용할 수 있는 여러가지 면접 질문이 포함되어 있습니다.
+지원자에게 모든 면접 질문을 사용하는 것은 추천하지 않습니다(아마 몇시간이 걸릴 것입니다).
+해당 리스트에서 몇가지 질문을 골라 질문하면, 필요한 전공 지식 확인에 도움이 됩니다.
 
-**Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
+**공지:**  이 질문들 중 대다수의 질문은 유동적인 질문이기 때문에, 직설적인 답변보다는 지원자의 능력에 대해 알고 더 흥미로운 이야기로 이어질수 있다는 점을 기억하세요.
 
-## Table of Contents
 
-  1. [General Questions](#general-questions)
-  1. [HTML Questions](#html-questions)
-  1. [CSS Questions](#css-questions)
-  1. [JS Questions](#js-questions)
-  1. [Testing Questions](#testing-questions)
-  1. [Performance Questions](#performance-questions)
-  1. [Network Questions](#network-questions)
-  1. [Coding Questions](#coding-questions)
-  1. [Fun Questions](#fun-questions)
+## 목차
 
-## Getting Involved
+ 1. [일반적인 질문](#일반적인-질문)
+ 1. [HTML 질문](#HTML-질문)
+ 1. [CSS 질문](#CSS-질문)
+ 1. [JavaScript 질문](#JavaScript-질문)
+ 1. [Testing 질문](#Testing-질문)
+ 1. [Performance 질문](#Performance-질문)
+ 1. [Network 질문](#Network-질문)
+ 1. [코딩 질문](#코딩-질문)
+ 1. [흥미로운 질문](#흥미로운-질문)
 
-  1. [Contributors](#contributors)
-  1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
-  1. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
 
-#### General Questions:
+## 기타 사항
 
-* What did you learn yesterday/this week?
-* What excites or interests you about coding?
-* What is a recent technical challenge you experienced and how did you solve it?
-* What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
-* Talk about your preferred development environment.
-* Which version control systems are you familiar with?
-* Can you describe your workflow when you create a web page?
-* If you have 5 different stylesheets, how would you best integrate them into the site?
-* Can you describe the difference between progressive enhancement and graceful degradation?
-* How would you optimize a website's assets/resources?
-* How many resources will a browser download from a given domain at a time?
-  * What are the exceptions?
-* Name 3 ways to decrease page load (perceived or actual load time).
-* If you jumped on a project and they used tabs and you used spaces, what would you do?
-* Describe how you would create a simple slideshow page.
-* If you could master one technology this year, what would it be?
-* Explain the importance of standards and standards bodies.
-* What is Flash of Unstyled Content? How do you avoid FOUC?
-* Explain what ARIA and screenreaders are, and how to make a website accessible.
-* Explain some of the pros and cons for CSS animations versus JavaScript animations.
-* What does CORS stand for and what issue does it address?
+ 1. [도움을 주신분들](#contributors)
+ 1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
+ 1. [라이센스](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
 
-#### HTML Questions:
 
-* What does a `doctype` do?
-* What's the difference between full standards mode, almost standards mode and quirks mode?
-* What's the difference between HTML and XHTML?
-* Are there any problems with serving pages as `application/xhtml+xml`?
-* How do you serve a page with content in multiple languages?
-* What kind of things must you be wary of when design or developing for multilingual sites?
-* What are `data-` attributes good for?
-* Consider HTML5 as an open web platform. What are the building blocks of HTML5?
-* Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
-* Describe the difference between `<script>`, `<script async>` and `<script defer>`.
-* Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
-* What is progressive rendering?
-* Have you used different HTML templating languages before?
+#### 일반적인 질문
 
-#### CSS Questions:
+ * 어제 혹은 이번주에 어떤것을 공부했었나요?
+ * 코딩에 대해 흥미롭거나 관심있는것이 있나요?
+ * 최근에 경험했던 기술적인 도전은 무엇이며, 어떻게 해결했나요?
+ * 지원자가 웹 프로그램를 개발하는 동안 UI, 보안, 성능, SEO, 유지관리같은 기술적 고려사항으로는 어떤것이 있었나요?
+ * 지원자가 선호하는 개발 환경에 대해 자유롭게 말씀해주세요.
+ * 어떤 버전 컨트롤 시스템이 친숙한가요?
+ * 웹페이지를 제작 시 지원자의 작업 흐름을 설명해주실수 있나요?
+ * 만약 지원자가 5개의 스타일시트를 가지고 있을때, 어떻게 5개의 스타일시트를 포함시킬것인가요?
+ * 점진적 향상법(progressive enhancement)과 우아한 성능저하법(graceful degradation)의 차이점을 설명해주실 수 있나요?
+ * 어떻게 하면 웹사이트의 자원을 최적화 할 수 있나요?
+ * 브라우저는 특정 도메인에서 얼마나 많은 리소스를 다운로드 하나요?
+        * 그 중 예외는 무엇인가요?
+ * 페이지 로딩시간을 줄이는 3가지 방법을 말씀해주세요(인지 또는 실제 로딩 시간).
+ * 지원자가 어떤 프로젝트에 참여하게 되었는데, 그 프로젝트에서는 탭을 사용하고 지원자는 스페이스바를 사용하여 공백을 처리한다면 어떻게 해결 할것인가요?
+ * 간단한 `slideshow` 페이지를 만드는것을 설명해주세요.
+ * 지원자가 올해 배우고 싶은 한가지 기술이 있나요? 어떤 기술인가요?
+ * 표준의 중요함에 대해 설명해주세요.
+ * FOUC가 무엇인가요? FOUC를 피하려면 어떻게 해야하나요?
+ * ARIA screen reader가 무엇이며, 어떻게 웹사이트에서 접근성을 높이는지 설명해주세요.
+ * CSS 애니메이션과 JavaScript 애니메이션의 장단점을 설명해주세요.
+ * CORS는 무엇을 의미하며, 주로 어떤 문제를 다루나요?
 
-* What is the difference between classes and IDs in CSS?
-* What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
-* Describe Floats and how they work.
-* Describe z-index and how stacking context is formed.
-* Describe BFC(Block Formatting Context) and how it works.
-* What are the various clearing techniques and which is appropriate for what context?
-* Explain CSS sprites, and how you would implement them on a page or site.
-* What are your favourite image replacement techniques and which do you use when?
-* How would you approach fixing browser-specific styling issues?
-* How do you serve your pages for feature-constrained browsers?
-  * What techniques/processes do you use?
-* What are the different ways to visually hide content (and make it available only for screen readers)?
-* Have you ever used a grid system, and if so, what do you prefer?
-* Have you used or implemented media queries or mobile specific layouts/CSS?
-* Are you familiar with styling SVG?
-* How do you optimize your webpages for print?
-* What are some of the "gotchas" for writing efficient CSS?
-* What are the advantages/disadvantages of using CSS preprocessors?
-  * Describe what you like and dislike about the CSS preprocessors you have used.
-* How would you implement a web design comp that uses non-standard fonts?
-* Explain how a browser determines what elements match a CSS selector.
-* Describe pseudo-elements and discuss what they are used for.
-* Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
-* What does ```* { box-sizing: border-box; }``` do? What are its advantages?
-* List as many values for the display property that you can remember.
-* What's the difference between inline and inline-block?
-* What's the difference between a relative, fixed, absolute and statically positioned element?
-* The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
-* What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
-* Have you played around with the new CSS Flexbox or Grid specs?
-* How is responsive design different from adaptive design?
-* Have you ever worked with retina graphics? If so, when and what techniques did you use?
-* Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
 
-#### JS Questions:
+#### HTML 질문
 
-* Explain event delegation
-* Explain how `this` works in JavaScript
-* Explain how prototypal inheritance works
-* What do you think of AMD vs CommonJS?
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
-* What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
-* What is a closure, and how/why would you use one?
-* What's a typical use case for anonymous functions?
-* How do you organize your code? (module pattern, classical inheritance?)
-* What's the difference between host objects and native objects?
-* Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
-* What's the difference between `.call` and `.apply`?
-* Explain `Function.prototype.bind`.
-* When would you use `document.write()`?
-* What's the difference between feature detection, feature inference, and using the UA string?
-* Explain Ajax in as much detail as possible.
-* What are the advantages and disadvantages of using Ajax?
-* Explain how JSONP works (and how it's not really Ajax).
-* Have you ever used JavaScript templating?
-  * If so, what libraries have you used?
-* Explain "hoisting".
-* Describe event bubbling.
-* What's the difference between an "attribute" and a "property"?
-* Why is extending built-in JavaScript objects not a good idea?
-* Difference between document load event and document DOMContentLoaded event?
-* What is the difference between `==` and `===`?
-* Explain the same-origin policy with regards to JavaScript.
-* Make this work:
+* `doctype`은 왜 필요한가요?
+* 완전 표준 모드와 유사 표준 모드, 호환 모드의 차이점은 무엇인가요?
+* HTML과 XHTML의 차이점은 무엇인가요?
+* `application/xhtml+xml`로 페이지 서비스시 문제가 발생하나요?
+* 여러 언어로 작성된 콘텐츠 페이지는 어떻게 제공해야 할까요?
+* 다국어로된 페이지를 디자인, 개발할 경우 주의해야 할 사항은 무엇인가요?
+* `data-` 속성의 장점이 있나요?
+* HTML5를 웹 플랫폼으로 정의할 때 HTML5의 기본 요소는 무엇인가요?
+* `cookie`, `sessionStorage`, `localStorage` 의 차이점을 설명해주세요.
+* `<script>`, `<script async>`, `<script defer>`의 차이점을 설명해주세요.
+* 왜 CSS `<link>`를 `<head></head>`사이에 두며, JS `<script>`는 `<body></body>`전에 두나요?
+    * 혹시 다른 예외상황도 있나요?
+* 점진적 렌더링은 무엇인가요?
+* 혹시 다른 HTML 템플릿 언어를 사용한 경험이 있나요?
+
+
+#### CSS 질문
+
+* CSS에서 id와 class의 차이점이 무엇인가요?
+* CSS에서 "resetting"과 "normalizing" 차이점이 무엇인가요? 지원자는 주로 어떤걸 사용하며, 왜 사용하나요?
+* `float`와 동작 방식에 대해 설명해주세요.
+* `z-index`와 stacking context가 문서 내에서 어떻게 적용되는지 설명해주세요.
+* BFC(Block Formatting Context)와 그것의 동작 방식에 대해 설명해주세요.
+* CSS에서 최적화 기술엔 어떠한것이 있으며, 어떤 상황에 사용하는것이 적합한가요?
+* CSS에서 이미지 버튼과 웹페이지에서 이것을 구현하는 방법을 설명해주세요.
+* 가장 좋아하는 이미지 대체 기술은 무엇이며, 언제 그 기술을 사용하나요?
+* 브라우저 별 스타일링 문제를 해결하는 방법과 그것에 대해 어떻게 생각하나요?
+* 기능이 제한적인 브라우저에선 어떻게 페이지를 제공하나요?
+    * 어떤 기술이나 방식을 사용하나요?
+* 컨텐츠를 시각적으로 숨기는 방법엔 무엇이 있나요(그리고 화면상에서만 처리할 수 있나요)?
+* 그리드 시스템을 사용한 경험이 있나요? 있다면 어떤 시스템을 선호하나요?
+* 미디어 쿼리 또는 모바일 특정 레이아웃을 CSS를 사용해 구현한 경험이 있나요?
+* SVG 스타일링에 익숙하나요?
+* 웹페이지를 (화면상으로)출력할 때 어떻게 최적화 하나요?
+* 효율적인 CSS를 작성할때 겪는 "어려움"에는 어떠한 것들이 있나요?
+* CSS 전처리기를 사용할 때 장단점으론 어떠한 것이 있나요?
+* CSS 전처리기에 대해 좋아하는점과 싫어하는점을 설명해주세요.
+* 비표준 폰트로 웹 디자인을 구현하는 방법은 무엇인가요?
+* 브라우저가 어떻게 요소와 CSS 선택자간의 일치를 결정하는지 설명해주세요.
+* 가상 선택자에 대해 설명하고 그것에 대한 의견을 말씀해주세요.
+* box 모델링과 어떻게 브라우저마다 다른 CSS box 모델링 레이아웃을 렌더링하는지 설명해주세요.
+* `{box-sizing: border-box;}`의 장점과 동작 방식은 무엇인가요?
+* 기억하고있는 `display`의 모든 속성값을 말씀해주세요.
+* 포지션 엘리먼트인 `relative`, `fixed`, `absolute`의 차이점은 무엇인가요?
+* CSS의 C는 cascading을 의미합니다. 그렇다면 스타일 지정시 우선 순위는 어떻게 결정되나요(몇가지 예시가 있나요)?
+    * 이 시스템은 어떻게 활용할 수 있나요?
+* 기존에 사용했던 CSS 프레임워크는 무엇인가요?
+    * 어떻게 그것들을 바꾸거나 개선할 것인가요?
+* CSS의 새로운 기술인 Flexbox나 Grid specs를 사용해본 경험이 있나요?
+* 반응형 디자인과 적응형 디자인의 차이점은 무엇인가요?
+* 시각적 그래픽(retina graphics)을 사용해본 경험이 있나요? 그리고 언제 어떤 기법을 사용했나요?
+* 절대 위치 대신 `translate()`를 사용하려는 이유가 있나요?
+
+
+#### JavaScript 질문
+
+* 이벤트 위임에 대해 설명해주세요.
+* 이 기능(JS기능 중 하나)이 JavaScript 내에서 어떻게 동작하는지 설명해주세요.
+* 프로토타입 상속이 어떻게 동작하는지 설명해주세요.
+* AMD vs CommonJS에 대해 어떻게 생각하나요?
+* 왜 이 코드가 IIFE로 작동하지 않는지 이유를 설명해주세요 `function(){}();`.
+    * 이 코드가 즉시실행함수로써 작동하기 위해선 어떤부분을 바꿔야 하나요?
+* `ㅜnull`, `undefined` 그리고 선언되지 않은 변수의 차이점은 무엇인가요?
+    * 또 어떻게 이 변수들의 상태를 구분하나요?
+* 클로저는 무엇이며 언제 이것을 사용하나요?
+* 언제 익명함수를 사용하나요?
+* 코드를 어떻게 구성하나요(모듈 패턴, 객체지향적 상속개념)?
+* host objects와 native objects의 차이점이 무엇인가요?
+* 함수선언, 함수리터럴, 함수생성자의 차이점이 있나요?
+* `.call`, `.apply`의 차이점은 무엇인가요?
+* `Function.prototype.bind`를 설명해주세요.
+* 만약 `document.write()`를 사용해야 한다면 언제 사용하실껀가요?
+* 기능 검출(feature detection)과 기능 추론(feature inference)의 차이점은 무엇인가요?
+* Ajax에 대해서 가능한 한 자세히 설명해주세요.
+* Ajax 사용시 장단점은 무엇인가요?
+* JSONP의 작동 방식을 설명해주세요(실제로 ajax가 아닌 방법).
+* 자바스크립트 템플릿을 사용해 본 적이 있나요?
+    * 그렇다면 어떤 라이브러리를 사용했나요?
+* 호이스팅에 대해 설명해주세요.
+* 이벤트 버블링에 대해 설명해주세요.
+* 속성(attribute)과 요소(property)의 차이점은 무엇인가요?
+* 자바스크립트 내장 객체를 확장하는것이 좋은 방법이 아닌 이유가 무엇인가요?
+* Document Load 이벤트와 Ready 이벤트의 차이점은 무엇인가요?
+* `==`와 `===`의 차이점은 무엇인가요?
+* 자바스크립트의 동일 출처 정책에 대해 설명해주세요.
+* 다음 코드가 동작하도록 코드를 작성해주세요:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
-* Why is it called a Ternary expression, what does the word "Ternary" indicate?
-* What is `"use strict";`? what are the advantages and disadvantages to using it?
-* Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
-* Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
-* Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
-* Explain what a single page app is and how to make one SEO-friendly.
-* What is the extent of your experience with Promises and/or their polyfills?
-* What are the pros and cons of using Promises instead of callbacks?
-* What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
-* What tools and techniques do you use debugging JavaScript code?
-* What language constructions do you use for iterating over object properties and array items?
-* Explain the difference between mutable and immutable objects.
-  * What is an example of an immutable object in JavaScript?
-  * What are the pros and cons of immutability?
-  * How can you achieve immutability in your own code?
-* Explain the difference between synchronous and asynchronous functions.
-* What is event loop?
-  * What is the difference between call stack and task queue?
-* Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+* 왜 삼항식이라고 불리며, 어떻게 선언하나요?
+* `use strict`가 무엇인가요? 그것을 어떤 장단점 때문에 사용하나요?
+* "fizz"를 3의배수로 "buzz"를 5의배수로 "fizzbuzz"를 15의 배수로 출력하는 for loop를 만들어보세요.
+* 웹 사이트의 글로벌 범위를 수정하지 않는것이 일반적으로 좋은 이유는 무엇인가요?
+* 혹시 `load` 이벤트를 사용하나요? 그 이벤트의 단점이 있나요? 그것에 다른 대안을 알고있나요?
+* 단일 페이지 앱이 무엇이며, 검색 엔진 최적화 앱을 만드는 방법을 설명해주세요.
+* 지원자분의 Promise 및 Polyfill에 대한 경험은 어느정도인가요?
+* Callback대신 Promise 사용시 장단점은 무엇인가요?
+* JavaScript로 컴파일되는 언어로 JavaScript 코드를 작성할때의 장단점은 무엇인가요?
+* JavaScript 코드를 디버깅할때 사용하는 도구와 기술은 무엇이 있나요?
+* 오브젝트 프로퍼티와 배열 아이템을 반복하여 사용하기 위해 사용하는 언어구조는 무엇인가요?
+* 변경 가능 객체와 변경 불가능 객체의 차이점을 설명해주세요.
+    - 자바스크립트 내에서 불변 객체의 예시로 어떠한것이 있나요?
+    - 불변 객체의 장단점은 무엇인가요?
+    - 자신의 코드에서 불변성을 얻어낼 수 있을까요?
+* 동기 함수와 비동기 함수의 차이점을 설명해주세요.
+* 이벤트 루프란 무엇입니까?
+    * call stack과 task queue의 차이점은 무엇인가요?
+* `foo(){}`와 `var foo = function(){}`에서 `foo` 사용법에 대한 차이점을 설명해주세요
 
-#### Testing Questions:
 
-* What are some advantages/disadvantages to testing your code?
-* What tools would you use to test your code's functionality?
-* What is the difference between a unit test and a functional/integration test?
-* What is the purpose of a code style linting tool?
+#### Testing 질문
 
-#### Performance Questions:
+* 코드를 테스트함으로써 얻는 장단점은 무엇인가요?
+* 코드의 기능을 테스트하기 위해선 어떠한 도구를 사용해야 하나요?
+* 단위 테스트, 기능 테스트, 통합 테스트의 차이점은 무엇인가요?
+* 코드 스타일 linting tool의 사용 목적은 무엇인가요?
 
-* What tools would you use to find a performance bug in your code?
-* What are some ways you may improve your website's scrolling performance?
-* Explain the difference between layout, painting and compositing.
 
-#### Network Questions:
+#### Performance 질문
 
-* Traditionally, why has it been better to serve site assets from multiple domains?
-* Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
-* What are the differences between Long-Polling, Websockets and Server-Sent Events?
-* Explain the following request and response headers:
-  * Diff. between Expires, Date, Age and If-Modified-...
-  * Do Not Track
-  * Cache-Control
-  * Transfer-Encoding
-  * ETag
-  * X-Frame-Options
-* What are HTTP methods? List all HTTP methods that you know, and explain them.
+* 코드에서 성능관련 버그를 찾기 위해 사용하는 도구를 어떠한것이 있나요?
+* 웹 사이트의 스크롤링 성능을 향상시킬 수 있는 방법이 있나요?
+* 레이아웃, 페인팅, 컴포지팅의 차이점을 설명해주세요.
 
-#### Coding Questions:
 
-*Question: What is the value of `foo`?*
+#### Network 질문
+
+* 전통적으로 여러 도메인 사이트의 자원을 제공하는것이 더 좋은 이유는 무엇인가요?
+* 웹 사이트의 URL을 입력할 때부터 화면이 로드 될 때까지의 프로세스에 대해 최선을 다해 설명해주세요.
+* Long-Polling, Websocket, Server-Sent Events의 차이점은 무엇인가요?
+* 다음 요청 및 응답 헤더를 설명해주세요.
+    - Diff. between Expires, Date, Age and If-Modified-...
+    - Do Not Track
+    - Cache-Control
+    - Transfer-Encoding
+    - ETag
+    - X-Frame-Options
+* HTTP 메소드란 무엇인가요? 알고있는 모든 HTTP 메소드에 대해 설명해주세요.
+
+
+#### 코딩 질문
+
+*질문 : `foo`에는 어떤 값이 할당될까요?*
 ```javascript
 var foo = 10 + '20';
 ```
 
-*Question: How would you make this work?*
+*질문 : 다음과 같이 작동하는 함수를 만들수 있나요?*
 ```javascript
 add(2, 5); // 7
 add(2)(5); // 7
 ```
 
-*Question: What value is returned from the following statement?*
+*질문 : 실행 결과의 출력값은 무엇인가요?*
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
 ```
 
-*Question: What is the value of `window.foo`?*
+*질문 : `window.foo`에 할당되는 값은 무엇인가요?*
 ```javascript
 ( window.foo || ( window.foo = "bar" ) );
 ```
 
-*Question: What is the outcome of the two alerts below?*
+*질문 : 두 alert의 결과값은 무엇인가요?*
 ```javascript
 var foo = "Hello";
 (function() {
@@ -213,21 +227,21 @@ var foo = "Hello";
 alert(foo + bar);
 ```
 
-*Question: What is the value of `foo.length`?*
+*질문 : `foo.length`의 값은 무엇인가요?*
 ```javascript
 var foo = [];
 foo.push(1);
 foo.push(2);
 ```
 
-*Question: What is the value of `foo.x`?*
+*질문 : `foo.x`의 값은 무엇인가요?*
 ```javascript
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
 ```
 
-*Question: What does the following code print?*
+*질문 : 다음 코드의 출력 순서는 어떻게 되나요?*
 ```javascript
 console.log('one');
 setTimeout(function() {
@@ -236,18 +250,23 @@ setTimeout(function() {
 console.log('three');
 ```
 
-#### Fun Questions:
 
-* What's a cool project that you've recently worked on?
-* What are some things you like about the developer tools you use?
-* Who inspires you in the front-end community?
-* Do you have any pet projects? What kind?
-* What's your favorite feature of Internet Explorer?
-* How do you like your coffee?
+#### 흥미로운 질문
+
+* 최근에 작업한 멋진 프로젝트는 무엇인가요?
+* 사용하는 개발자 도구에 대해 좋아하는점은 무엇인가요?
+* 프론트엔드 커뮤니티에서 존경하는 사람이 있나요?
+* 혹시 애완동물에 관련된 프로젝트가 있나요?
+* Internet Explorer의 가장 좋아하는 기능은 무엇인가요?
+* 커피 한잔 어떠신가요?
 
 
-#### Contributors:
+#### Contributors
 
-This document started in 2009 as a collaboration of [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano)  [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) and [@iansym](https://twitter.com/iansym).
+이 문서는 2009년에 제작되어 여러 사람들의 도움으로 만들어졌습니다. [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano)  [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed)  [@iansym](https://twitter.com/iansym)
 
-It has since received contributions from over [100 developers](https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors).
+그 이후로 [100명](https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors)이 넘는 개발자들의 공헌을 받아 지금까지 제작되었습니다.
+
+
+
+이 문서는 [@M4steM4](https://github.com/M4steM4)에 의해 번역(및 의역)되었습니다.
